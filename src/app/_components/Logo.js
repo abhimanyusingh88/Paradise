@@ -14,7 +14,7 @@ function Logo() {
         priority     //  makes sure logo loads fast
       />
       <span className="text-xl font-semibold text-primary-100">
-        The Wild Oasis
+        The Wilderness
       </span>
     </Link>
   );

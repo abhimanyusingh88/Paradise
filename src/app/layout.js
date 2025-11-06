@@ -5,6 +5,7 @@ import { ReservationProvider } from "./_components/ReservationContext";
 import WhatsAppButton from "./_components/WhatappButton";
 import AIChatButton from "./_components/aiChat";
 import { Toaster } from "react-hot-toast";
+import SelfPageScrollUp from "./_components/SelfPageScrollUp";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -36,10 +37,14 @@ export default function RootLayout({ children }) {
 
         <WhatsAppButton />
         <AIChatButton />
+        <SelfPageScrollUp/>
+
+
 
         <footer className="text-center py-6 border-t border-primary-800 text-sm text-primary-400">
           © {new Date().getFullYear()} The Wilderness & Family. All rights reserved.
         </footer>
+        {/* <SelfPageScrollUp/> */}
 
         <Toaster
           position="top-center"

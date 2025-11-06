@@ -23,7 +23,7 @@ export default function Page() {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="w-full max-w-3xl backdrop-blur-md border-2 border-accent-900/30 rounded-3xl shadow-xl p-10"
+        className="w-full max-w-3xl backdrop-blur-md border-2 border-accent-400 rounded-3xl shadow-xl p-10"
       >
         <header className="mb-8 text-center">
           <h1 className="text-3xl font-semibold text-accent-400">

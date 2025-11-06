@@ -1,3 +1,4 @@
+"use client"
 import { FaPaperPlane } from "react-icons/fa";
 
 export default function ChatInput({ input, setInput, onSend, disabled }) {
