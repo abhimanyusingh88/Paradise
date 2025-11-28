@@ -4,4 +4,7 @@ This is a hotel booking project made with:
 3. Tailwind css for styling
 4. Google auth as auth provider for safe and smooth authentication
 this project mainly focuses on smooth cabin booking with multiple features, such as filters, reminder for seleted dates, profile update, safe login and logout to access you profile and bookings,
-booking details can be edited or deleted, a smooth and interactive ui to enhance your overall experience. 
+booking details can be edited or deleted, a smooth and interactive ui to enhance your overall experience.
+A full demo video of this project can be seen here in this video :
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u0SKQMhyA9s?si=M-2-5WuOkhu3Xxz1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
