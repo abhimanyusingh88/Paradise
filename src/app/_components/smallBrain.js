@@ -48,6 +48,8 @@ export function smallBrain(text) {
 
   if (/thank(s| you)/.test(lower))
     return ["You’re very welcome! 😊", "Anytime!", "Glad I could help! 🙌"].random();
+   if (/hotel(s|name)/.test(lower))
+    return ["The hotel name is Your-HOME, it's your sweet home 🙌"].random();
 
   if (/weather|temperature/.test(lower))
     return [

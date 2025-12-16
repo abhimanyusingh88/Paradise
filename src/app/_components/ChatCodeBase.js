@@ -320,6 +320,7 @@ export const knowledgeBase = {
   travelquote: "✈️ 'Take only memories, leave only footprints.' — Chief Seattle",
   adventurequote: "🗻 'Jobs fill your pocket, but adventures fill your soul.'",
   mountainquote: "🏔️ 'The best view comes after the hardest climb.'",
+  hotel_name: "The Your-Home",
   
 
 };

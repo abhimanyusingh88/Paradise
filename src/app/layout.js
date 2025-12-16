@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
 
 
         <footer className="text-center py-6 border-t border-primary-800 text-sm text-primary-400">
-          © {new Date().getFullYear()} The Wilderness & Family. All rights reserved.
+          © {new Date().getFullYear()} The Your-Home & Family. All rights reserved.
         </footer>
         {/* <SelfPageScrollUp/> */}
 

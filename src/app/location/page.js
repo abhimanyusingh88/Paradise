@@ -112,7 +112,7 @@ export default function Page() {
 
       <p className="text-lg max-w-2xl text-gray-300">
         Nestled in the heart of the{" "}
-        <span className="text-accent-300">Italian Dolomites</span>, The Wilderness offers breathtaking views and the serenity of nature.
+        <span className="text-accent-300">Italian Dolomites</span>, The hotel offers breathtaking views and the serenity of nature.
       </p>
 
       {weather && (
