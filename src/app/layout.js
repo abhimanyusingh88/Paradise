@@ -3,9 +3,10 @@ import "@/app/_styles/globals.css";
 import Header from "./_components/Header";
 import { ReservationProvider } from "./_components/ReservationContext";
 import WhatsAppButton from "./_components/WhatappButton";
-import AIChatButton from "./_components/aiChat";
+// import AIChatButton from "./_components/aiChat";
 import { Toaster } from "react-hot-toast";
 import SelfPageScrollUp from "./_components/SelfPageScrollUp";
+import AIChatButton from "./_components/AiChat";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
