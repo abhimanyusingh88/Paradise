@@ -8,19 +8,19 @@ import SubmitButton from "./submitButton";
 
 function ReservationForm({ cabin, user }) {
   // const { maxCapacity } = cabin;
-  const { range ,resetRange} = useReservation();
+  const { range, resetRange } = useReservation();
   const router = useRouter(); // ✅ client-side navigation
-  const {maxCapacity,regularPrice,discount,id}= cabin;
-  const startDate= range.from;
-  const endDate= range.to;
-  const numNights= differenceInDays(endDate,startDate);
-  const cabinPrice= numNights*(regularPrice-discount);
-  const bookingData= {startDate,endDate,numNights,cabinPrice,cabinId:id,};
- const createBookingWithData= createBooking.bind(null,bookingData);
+  const { maxCapacity, regularPrice, discount, id } = cabin;
+  const startDate = range.from;
+  const endDate = range.to;
+  const numNights = differenceInDays(endDate, startDate);
+  const cabinPrice = numNights * (regularPrice - discount);
+  const bookingData = { startDate, endDate, numNights, cabinPrice, cabinId: id, };
+  const createBookingWithData = createBooking.bind(null, bookingData);
 
   return (
     <div className="scale-[1.01]">
-      <div className="bg-primary-800 text-primary-300 px-16 py-2 flex justify-between items-center">
+      <div className="bg-primary-800 text-primary-300 px-4 md:px-16 py-2 flex justify-between items-center">
         <p>Logged in as</p>
 
         <div
@@ -37,9 +37,10 @@ function ReservationForm({ cabin, user }) {
         </div>
       </div>
 
-      <form action={ async (formData)=>{await createBookingWithData(formData);
+      <form action={async (formData) => {
+        await createBookingWithData(formData);
         resetRange();
-      }} className="bg-primary-900 py-10 px-16 text-lg flex gap-5 flex-col">
+      }} className="bg-primary-900 py-6 md:py-10 px-4 md:px-16 text-lg flex gap-5 flex-col">
         <div className="space-y-2">
           <label htmlFor="numGuests">How many guests?</label>
           <select
@@ -69,12 +70,12 @@ function ReservationForm({ cabin, user }) {
           />
         </div>
 
-        <div className="flex justify-end items-center gap-6">
-          <p className="text-primary-300 text-base">
+        <div className="flex flex-col-reverse md:flex-row justify-center md:justify-end items-center gap-4 md:gap-6">
+          <p className="text-primary-300 text-base text-center md:text-right">
             Start by selecting dates
           </p>
 
-        { numNights!==0 && <SubmitButton>Reserve Now</SubmitButton>}
+          {numNights !== 0 && <SubmitButton>Reserve Now</SubmitButton>}
         </div>
       </form>
     </div>

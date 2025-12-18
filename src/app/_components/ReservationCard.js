@@ -13,7 +13,7 @@ export const formatDistanceFromNow = (dateStr) =>
     addSuffix: true,
   }).replace("about ", "");
 
-function ReservationCard({ booking,onDelete }) {
+function ReservationCard({ booking, onDelete }) {
   const [open, setOpen] = useState(false);
 
   const {
@@ -29,16 +29,16 @@ function ReservationCard({ booking,onDelete }) {
 
   return (
     <>
-      <div className="flex border border-primary-800">
+      <div className="flex flex-col md:flex-row border border-primary-800">
         <div
-          className="relative h-32 aspect-square cursor-pointer"
+          className="relative w-full md:w-auto h-48 md:h-32 md:aspect-square cursor-pointer"
           onClick={() => setOpen(true)}
         >
           <Image
             src={image}
             fill
             alt={`Cabin ${name}`}
-            className="object-cover border-r border-primary-800"
+            className="object-cover border-b md:border-b-0 md:border-r border-primary-800"
           />
         </div>
 
@@ -80,12 +80,12 @@ function ReservationCard({ booking,onDelete }) {
           </div>
         </div>
 
-        <div className="flex flex-col border-l border-primary-800 w-[100px]">
+        <div className="flex flex-row md:flex-col border-t md:border-t-0 md:border-l border-primary-800 w-full md:w-[100px]">
           {!isPast(startDate) ? (
             <>
               <Link
                 href={`/account/reservations/edit/${id}`}
-                className="group flex items-center gap-2 uppercase text-xs font-bold text-primary-300 border-b border-primary-800 flex-grow px-3 hover:bg-accent-600 transition-colors hover:text-primary-900"
+                className="group flex items-center justify-center gap-2 uppercase text-xs font-bold text-primary-300 border-b-0 border-r md:border-r-0 md:border-b border-primary-800 flex-grow px-3 py-3 md:py-0 hover:bg-accent-600 transition-colors hover:text-primary-900"
               >
                 <PencilSquareIcon className="h-5 w-5 text-primary-600 group-hover:text-primary-800 transition-colors" />
                 <span className="mt-1">Edit</span>

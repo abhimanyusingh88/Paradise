@@ -22,7 +22,7 @@ export default function WhatsAppButton() {
 
   return (
     <motion.div
-      className="fixed bottom-8 right-8 z-50 cursor-pointer"
+      className="fixed bottom-8 right-4 md:right-8 z-50 cursor-pointer"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ type: "spring", stiffness: 200, damping: 15 }}

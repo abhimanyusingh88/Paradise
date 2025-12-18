@@ -10,13 +10,13 @@ export default async function Reservation({ cabin }) {
     getSettings(),
     getBookedDatesByCabinId(cabin.id),
   ]);
-  const session= await auth();
+  const session = await auth();
 
   return (
-    <div className="grid grid-row-[1.2fr_1fr] gap-6 items-start border border-primary-100 p-6">
+    <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-6 items-start border border-primary-100 p-2 md:p-6">
       <DateSelector settings={settings} bookedDates={bookedDates} cabin={cabin} />
 
-      { session?.user ? <ReservationForm cabin={cabin} user={session.user}/> : <LoginMessage/> }
+      {session?.user ? <ReservationForm cabin={cabin} user={session.user} /> : <LoginMessage />}
     </div>
   );
 }

@@ -15,9 +15,9 @@ export default async function Page(props) {
 
       <form
         action={updateBooking}
-        className="bg-primary-900 py-8 px-12 text-lg flex gap-6 flex-col"
+        className="bg-primary-900 py-6 px-4 md:py-8 md:px-12 text-lg flex gap-6 flex-col"
       >
-        <input type="hidden" value={bookingId} name="bookingId"/>
+        <input type="hidden" value={bookingId} name="bookingId" />
         <div className="space-y-2">
           <label htmlFor="numGuests">How many guests?</label>
           <select
@@ -47,8 +47,8 @@ export default async function Page(props) {
           />
         </div>
 
-        <div className="flex justify-end items-center gap-6">
-         <SubmitButton>Update Booking</SubmitButton>
+        <div className="flex justify-center md:justify-end items-center gap-6">
+          <SubmitButton>Update Booking</SubmitButton>
         </div>
       </form>
     </div>

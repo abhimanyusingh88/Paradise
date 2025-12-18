@@ -10,16 +10,16 @@ function CabinCard({ cabin }) {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="flex border border-primary-800">
+      <div className="flex flex-col md:flex-row border border-primary-800 w-full overflow-hidden">
         <div
-          className="relative flex-1 group cursor-pointer overflow-hidden"
+          className="relative w-full md:w-auto h-64 md:h-auto md:flex-1 group cursor-pointer overflow-hidden"
           onClick={() => setOpen(!open)}
         >
           <Image
             src={image}
             alt={`Cabin ${name}`}
             fill
-            className="object-cover border-r border-primary-800 transition-transform duration-500 group-hover:scale-105"
+            className="object-cover border-b md:border-b-0 md:border-r border-primary-800 transition-transform duration-500 group-hover:scale-105"
           />
 
           {/* Modern hover overlay */}

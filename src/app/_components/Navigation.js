@@ -2,13 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { auth } from "../_lib/auth";
 import { MapPin, ChevronDown } from "lucide-react";
+import SignOutButton from "./SignOutButton";
 
 export default async function Navigation() {
   const session = await auth();
 
   return (
-    <nav className="z-10 text-lg font-medium">
-      <ul className="flex gap-14 items-center relative">
+    <nav className="z-10 text-xl font-medium">
+      <ul className="flex gap-8 lg:gap-14 items-center relative">
         {/* Location */}
         <li className="flex items-center gap-2">
           <MapPin className="w-5 h-5 text-accent-400" />
@@ -108,6 +109,9 @@ export default async function Navigation() {
                   >
                     Feedback
                   </Link>
+                </li>
+                <li className="mt-1 border-t border-gray-200">
+                  <SignOutButton className="!w-full !text-left !px-4 !py-2 !text-red-500 hover:!bg-red-500 hover:!text-white transition-colors !flex !items-center !gap-2 !bg-transparent !justify-start !font-semibold !rounded-none" />
                 </li>
               </ul>
             </div>

@@ -64,39 +64,39 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-3 gap-4">
-  <div>
-    <label className="block text-sm font-medium text-gray-300 mb-1">
-      Room / Cabin
-    </label>
-    <input
-      name="room"
-      placeholder="A-302"
-      className="w-full h-[42px] rounded-xl px-4 py-2 bg-gray-900/60 border border-gray-700 focus:ring-2 focus:ring-accent-500 outline-none text-gray-100 transition"
-    />
-  </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-1">
+                Room / Cabin
+              </label>
+              <input
+                name="room"
+                placeholder="A-302"
+                className="w-full h-[42px] rounded-xl px-4 py-2 bg-gray-900/60 border border-gray-700 focus:ring-2 focus:ring-accent-500 outline-none text-gray-100 transition"
+              />
+            </div>
 
-  <div className="col-span-2">
-    <label className="block text-sm font-medium text-gray-300 mb-1">
-      Overall rating
-    </label>
-    <select
-      name="rating"
-      required
-      className="w-full h-[42px] rounded-xl px-4 py-2 border border-gray-700 bg-gray-900/60 appearance-none focus:ring-2 focus:ring-accent-500 outline-none text-gray-300 font-sm transition"
-      style={{
-        backdropFilter: "blur(6px)",
-        WebkitBackdropFilter: "blur(6px)",
-      }}
-    >
-      <option value="" className="bg-gray-900 text-gray-100">Select rating</option>
-      <option value="5" className="bg-gray-900 text-gray-100">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
-      <option value="4" className="bg-gray-900 text-gray-100">⭐️⭐️⭐️⭐️ Very good</option>
-      <option value="3" className="bg-gray-900 text-gray-100">⭐️⭐️⭐️ Good</option>
-      <option value="2" className="bg-gray-900 text-gray-100">⭐️⭐️ Poor</option>
-      <option value="1" className="bg-gray-900 text-gray-100">⭐️ Very poor</option>
-    </select>
-  </div>
-</div>
+            <div className="col-span-2">
+              <label className="block text-sm font-medium text-gray-300 mb-1">
+                Overall rating
+              </label>
+              <select
+                name="rating"
+                required
+                className="w-full h-[42px] rounded-xl px-4 py-2 border border-gray-700 bg-gray-900/60 appearance-none focus:ring-2 focus:ring-accent-500 outline-none text-gray-300 font-sm transition"
+                style={{
+                  backdropFilter: "blur(6px)",
+                  WebkitBackdropFilter: "blur(6px)",
+                }}
+              >
+                <option value="" className="bg-gray-900 text-gray-100">Select rating</option>
+                <option value="5" className="bg-gray-900 text-gray-100">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
+                <option value="4" className="bg-gray-900 text-gray-100">⭐️⭐️⭐️⭐️ Very good</option>
+                <option value="3" className="bg-gray-900 text-gray-100">⭐️⭐️⭐️ Good</option>
+                <option value="2" className="bg-gray-900 text-gray-100">⭐️⭐️ Poor</option>
+                <option value="1" className="bg-gray-900 text-gray-100">⭐️ Very poor</option>
+              </select>
+            </div>
+          </div>
 
 
           <div>
@@ -112,21 +112,21 @@ export default function Page() {
             />
           </div>
 
-          <div className="flex items-center justify-between gap-4">
-            <SubmitButton>
-            
-              <FaPaperPlane />
-              Submit Feedback
+          <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 mt-6">
+            <div className="order-1 md:order-none">
+              <SubmitButton>
+                <FaPaperPlane />
+                Submit Feedback
               </SubmitButton>
-            
+            </div>
 
-            <div className="text-sm text-red-400">
+            <div className="text-sm text-red-400 text-center order-3 md:order-none">
               **All fields are mandatory to fill
             </div>
 
             <button
               type="reset"
-className="inline-flex items-center gap-3 border-2 border-red-400 bg-transparent hover:bg-red-400 hover:text-white text-red-400 font-semibold px-5 py-2 rounded-xl shadow-md transition"
+              className="order-2 md:order-none inline-flex justify-center items-center gap-3 border-2 border-red-400 bg-transparent hover:bg-red-400 hover:text-white text-red-400 font-semibold px-5 py-3 md:py-2 rounded-xl shadow-md transition"
             >
               Reset
             </button>

@@ -3,17 +3,17 @@ import about1 from "../../../public/about-1.jpg"
 import about2 from "../../../public/about-2.jpg"
 import { getCabins } from "../_lib/data-service";
 
-export const revalidate= 86400;
+export const revalidate = 86400;
 export const metadata = {
-    title:"About",
+  title: "About",
 }
 export default async function Page() {
-  const cabin= await getCabins();
-  const totLength= cabin.length;
-  
+  const cabin = await getCabins();
+  const totLength = cabin.length;
+
   return (
-    <div className="grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center">
-      <div className="col-span-3">
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-y-12 md:gap-x-24 md:gap-y-32 text-lg items-center">
+      <div className="col-span-1 md:col-span-3">
         <h1 className="text-4xl mb-10 text-accent-400 font-medium">
           Welcome to YOUR HOME
         </h1>
@@ -40,7 +40,7 @@ export default async function Page() {
         </div>
       </div>
 
-      <div className="col-span-2 relative aspect-square">
+      <div className="col-span-1 md:col-span-2 relative aspect-square">
         <Image
           src={about1}
           fill
@@ -50,11 +50,11 @@ export default async function Page() {
         />
       </div>
 
-      <div className=" relative aspect-square col-span-2">
+      <div className="relative aspect-square col-span-1 md:col-span-2">
         <Image src={about2} fill className="object-cover" alt="Family that manages The Wild Oasis" placeholder="blur" />
       </div>
 
-      <div className="col-span-3">
+      <div className="col-span-1 md:col-span-3">
         <h1 className="text-4xl mb-10 text-accent-400 font-medium">
           Managed by our family since 1962
         </h1>
