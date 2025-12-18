@@ -1,5 +1,6 @@
 This is a hotel booking project made with:
-live link : https://your-home-web.vercel.app/account
+
+Check out the website : https://your-home-web.vercel.app/account
 1. Next js (for front end and backend logic)
 2. supa base a database
 3. Tailwind css for styling
