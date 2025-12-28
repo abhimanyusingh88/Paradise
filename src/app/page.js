@@ -9,7 +9,7 @@ export default function Page() {
 
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-6xl lg:text-8xl text-primary-50 mb-10 tracking-tight font-normal">
-          Welcome to your-home
+          Welcome to <span className="text-amber-600">paradise</span>
         </h1>
         <Link
           href="/cabins"

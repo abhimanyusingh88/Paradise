@@ -15,8 +15,8 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: {
-    template: "%s / Your Home",
-    default: "Your Home",
+    template: "%s / Paradise",
+    default: "Paradise",
   },
   description:
     "Luxurious cabin hotel, located at the great mountains of Himalayas",
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
 
 
         <footer className="text-center py-6 border-t border-primary-800 text-sm text-primary-400">
-          © {new Date().getFullYear()} The Your-Home & Family. All rights reserved.
+          © {new Date().getFullYear()} The Paradise & Family. All rights reserved.
         </footer>
         {/* <SelfPageScrollUp/> */}
 

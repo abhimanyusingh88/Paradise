@@ -16,7 +16,7 @@ function Logo() {
         priority
       />
       <span className="text-xl font-semibold text-primary-100">
-        YOUR HOME
+        PARADISE
       </span>
     </Link>
   );
